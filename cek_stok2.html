@@ -1,0 +1,225 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        Elpiji Gas
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        /* Custom dropdown arrow for Produk */
+        .dropdown-arrow {
+            border-top: 4px solid black;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            width: 0;
+            height: 0;
+            display: inline-block;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black">
+
+    <header class="flex justify-between items-center px-4 py-3 max-w-screen-xl mx-auto">
+        <div class="flex items-center space-x-6">
+            <a href="dashboard.html"><img alt="Elpiji Gas logo, flame shape with purple and yellow colors"
+                    class="w-17 h-22" height="50" src="images/ELPIJI_1.png" width="50" /></a>
+            <nav class="flex space-x-6 text-xs font-bold">
+                <a class="hover:underline" href="agen.html">
+                    AGEN
+                </a>
+                <div class="relative cursor-pointer" id="produk-menu">
+                    <button id="produk-toggle" class="flex items-center hover:underline focus:outline">
+                        PRODUK
+                        <span class="dropdown-arrow ml-1"></span>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div id="produk-dropdown"
+                        class="absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible transition duration-200 z-50">
+                        <a href="produk3.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Elpiji
+                            Gas 3Kg</a>
+                        <a href="produk12.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Elpiji
+                            12Kg</a>
+                    </div>
+                </div>
+                <a class="hover:underline" href="cek_stok.html">
+                    CEK STOK SEKARANG
+                </a>
+            </nav>
+        </div>
+        <div class="text-xs font-extrabold text-right leading-tight">
+            <a class="block hover:underline" href="#">
+                MASUK / DAFTAR
+            </a>
+            <a class="block hover:underline" href="#">
+                AGEN
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Script -->
+    <script>
+        const toggleBtn = document.getElementById('produk-toggle');
+        const dropdown = document.getElementById('produk-dropdown');
+
+        toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            dropdown.classList.toggle('invisible');
+            dropdown.classList.toggle('opacity-0');
+            dropdown.classList.toggle('opacity-100');
+            dropdown.classList.toggle('visible');
+        });
+
+        // Optional: hide dropdown if click outside
+        document.addEventListener('click', (e) => {
+            if (!document.getElementById('produk-menu').contains(e.target)) {
+                dropdown.classList.add('invisible', 'opacity-0');
+                dropdown.classList.remove('visible', 'opacity-100');
+            }
+        });
+    </script>
+    <main class="max-w-5xl mx-auto px-6 sm:px-10">
+        <section class="relative rounded-xl overflow-hidden mt-6 sm:mt-10 max-w-4xl mx-auto" style="min-height: 140px;">
+            <img alt="Blue curved shape top left corner" class="absolute top-0 left-0 rounded-tl-xl" height="60"
+                src="https://storage.googleapis.com/a1aa/image/37e6f597-9274-4598-1ef1-4dd647129ef5.jpg" width="60" />
+            <img alt="Blue curved shape bottom right corner" class="absolute bottom-0 right-0 rounded-br-xl" height="60"
+                src="https://storage.googleapis.com/a1aa/image/de53f680-75c7-4d59-7390-a3d0bb1633c6.jpg" width="60" />
+            <div
+                class="bg-red-600 text-white rounded-xl px-8 py-6 relative z-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0">
+                <div class="space-y-3 max-w-[70%] sm:max-w-[60%]">
+                    <div class="flex items-center gap-2 font-semibold text-[15px] leading-[20px]">
+                        <i class="fas fa-store">
+                        </i>
+                        <span>
+                            PT. BEST
+                        </span>
+                    </div>
+                    <div class="flex items-start gap-2 text-[14px] leading-[20px]">
+                        <i class="fas fa-map-marker-alt mt-[3px]">
+                        </i>
+                        <p class="max-w-[90%]">
+                            JALAN KEBONSARI JT III / 462 RT 029 RW 007, KELURAHAN GOWONGAN,
+                            KECAMATAN JETIS, KOTA YOGYAKARTA
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2 text-[14px] leading-[20px]">
+                        <i class="fas fa-phone-alt">
+                        </i>
+                        <span>
+                            08123456789
+                        </span>
+                    </div>
+                </div>
+                <img alt="Flame logo with blue, red and green colors on right side"
+                    class="w-[60px] h-[60px] object-contain" height="60"
+                    src="https://storage.googleapis.com/a1aa/image/bdc3fac7-f7d9-4449-e0af-b65493a5ebec.jpg"
+                    width="60" />
+            </div>
+        </section>
+        <section class="mt-8 max-w-4xl mx-auto">
+            <h2 class="font-semibold text-[15px] leading-[20px] mb-4">
+                STOK &amp; HARGA
+            </h2>
+            <div class="flex gap-12">
+                <div class="flex flex-col items-center text-center max-w-[100px]">
+                    <img alt="Green 3KG gas cylinder with white leaf icon" class="w-[80px] h-[120px] object-contain"
+                        height="120"
+                        src="https://storage.googleapis.com/a1aa/image/5386730a-277c-436a-fcad-10fd97e502b7.jpg"
+                        width="80" />
+                    <div class="font-semibold text-[14px] leading-[20px] mt-2">
+                        ELPIJI 3KG
+                    </div>
+                    <div class="text-[14px] leading-[20px]">
+                        Rp. 22.000
+                    </div>
+                    <div class="font-semibold text-[14px] leading-[20px] mt-1">
+                        STOK
+                    </div>
+                    <div class="text-[14px] leading-[20px]">
+                        10
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center max-w-[100px]">
+                    <img alt="Blue 12KG gas cylinder with white leaf icon" class="w-[80px] h-[140px] object-contain"
+                        height="140"
+                        src="https://storage.googleapis.com/a1aa/image/454be86c-9b77-432a-e8aa-8b12fc9d6b0f.jpg"
+                        width="80" />
+                    <div class="font-semibold text-[14px] leading-[20px] mt-2">
+                        ELPIJI 12KG
+                    </div>
+                    <div class="text-[14px] leading-[20px]">
+                        Rp. 210.000
+                    </div>
+                    <div class="font-semibold text-[14px] leading-[20px] mt-1">
+                        STOK
+                    </div>
+                    <div class="text-[14px] leading-[20px]">
+                        6
+                    </div>
+                </div>
+            </div>
+            <hr class="border-t border-gray-300 mt-6" />
+        </section>
+    </main>
+    <footer
+        class="max-w-7xl mx-auto px-6 sm:px-10 mt-20 mb-6 flex flex-col sm:flex-row items-center justify-between text-[10px] leading-[14px] text-gray-500">
+        <div class="flex space-x-6 mb-6 sm:mb-0">
+            <img alt="Pertamina logo with red, blue and green shapes" class="w-[40px] h-[30px] object-contain"
+                height="30" src="https://storage.googleapis.com/a1aa/image/cd0c2666-ee56-4a12-1e4c-a13c30d7d532.jpg"
+                width="40" />
+            <img alt="My Pertamina logo in blue and white" class="w-[40px] h-[30px] object-contain" height="30"
+                src="https://storage.googleapis.com/a1aa/image/85470473-96ff-49a8-00ec-28ff0f91309a.jpg" width="40" />
+            <img alt="Pertamina Call 135 logo in red and white" class="w-[40px] h-[30px] object-contain" height="30"
+                src="https://storage.googleapis.com/a1aa/image/cc3fa870-3103-4eb6-a67f-b1727619b43e.jpg" width="40" />
+        </div>
+        <div class="text-center mb-6 sm:mb-0">
+            <div class="font-semibold mb-2">
+                IKUTI MEDIA SOSIAL KAMI
+            </div>
+            <div class="flex justify-center space-x-6 text-black text-lg">
+                <a aria-label="Facebook" class="hover:text-gray-700" href="#">
+                    <i class="fab fa-facebook-f">
+                    </i>
+                </a>
+                <a aria-label="Instagram" class="hover:text-gray-700" href="#">
+                    <i class="fab fa-instagram">
+                    </i>
+                </a>
+                <a aria-label="X Twitter" class="hover:text-gray-700" href="#">
+                    <i class="fab fa-x-twitter">
+                    </i>
+                </a>
+                <a aria-label="YouTube" class="hover:text-gray-700" href="#">
+                    <i class="fab fa-youtube">
+                    </i>
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-col space-y-1 text-[10px] font-semibold text-gray-400">
+            <a class="hover:underline" href="#">
+                FAQ
+            </a>
+            <a class="hover:underline" href="#">
+                KONTAK
+            </a>
+        </div>
+    </footer>
+    <div class="bg-red-600 text-white text-[12px] leading-[16px] px-6 py-4 text-center font-normal">
+        <p>
+            Best view in Mozilla Firefox and Google Chrome.
+        </p>
+        <p>
+            Copyright © ELPIJI GAS | 2024 | All Right Reserved
+        </p>
+    </div>
+</body>
+
+</html>

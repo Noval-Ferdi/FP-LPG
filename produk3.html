@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        ELPIJI Gas 12Kg
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        /* Custom dropdown arrow for Produk */
+        .dropdown-arrow {
+            border-top: 4px solid black;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            width: 0;
+            height: 0;
+            display: inline-block;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black">
+    <!-- Header -->
+    <header class="flex justify-between items-center px-4 py-3 max-w-screen-xl mx-auto">
+        <div class="flex items-center space-x-6">
+            <a href="dashboard.html"><img alt="Elpiji Gas logo, flame shape with purple and yellow colors"
+                    class="w-17 h-22" height="50" src="images/ELPIJI_1.png" width="50" /></a>
+            <nav class="flex space-x-5 text-l font-bold">
+                <a class="hover:underline" href="agen.html">
+                    AGEN
+                </a>
+                <div class="relative cursor-pointer" id="produk-menu">
+                    <button id="produk-toggle" class="flex items-center hover:underline focus:outline">
+                        PRODUK
+                        <span class="dropdown-arrow ml-1"></span>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div id="produk-dropdown"
+                        class="absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible transition duration-200 z-50">
+                        <a href="produk3.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Elpiji
+                            Gas 3Kg</a>
+                        <a href="produk12.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Elpiji
+                            12Kg</a>
+                    </div>
+                </div>
+                <a class="hover:underline" href="cek_stok.html">
+                    CEK STOK SEKARANG
+                </a>
+            </nav>
+        </div>
+        <div class="text-xs font-extrabold text-right leading-tight">
+            <a class="block hover:underline" href="#">
+                MASUK / DAFTAR
+            </a>
+            <a class="block hover:underline" href="#">
+                AGEN
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Script -->
+    <script>
+        const toggleBtn = document.getElementById('produk-toggle');
+        const dropdown = document.getElementById('produk-dropdown');
+
+        toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            dropdown.classList.toggle('invisible');
+            dropdown.classList.toggle('opacity-0');
+            dropdown.classList.toggle('opacity-100');
+            dropdown.classList.toggle('visible');
+        });
+
+        // Optional: hide dropdown if click outside
+        document.addEventListener('click', (e) => {
+            if (!document.getElementById('produk-menu').contains(e.target)) {
+                dropdown.classList.add('invisible', 'opacity-0');
+                dropdown.classList.remove('visible', 'opacity-100');
+            }
+        });
+    </script>
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+        <div class="relative rounded-md overflow-hidden">
+            <img src="images/gas3.png" alt="">
+        </div>
+    </section>
+
+    <!-- Description Text -->
+    <section class="max-w-4xl mx-auto mt-12 px-6 text-gray-900 text-base md:text-lg leading-relaxed space-y-6">
+        <p>
+            ELPIJI Gas 12 kg hadir untuk memenuhi kebutuhan anda memasak masakan
+            untuk keluarga besar tercinta dirumah (lebih dari 4 orang anggota
+            keluarga).
+        </p>
+        <p>
+            ELPIJI Gas 12 kg merupakan produk LPG (Liquified Petroleum Gas) Non
+            Subsidi dari PT. PERTAMINA (Persero) yang dikemas dalam tabung (berat
+            tabung 15,1 kg).
+        </p>
+    </section>
+    <!-- Green Cylinder Image -->
+    <section class="max-w-7xl mx-auto mt-32 flex justify-center px-6">
+        <img alt="Green Elpiji Gas cylinder with reflection on bright green background" class="w-40 md:w-48"
+            height="160" src="images/gas3.png" width="160" />
+    </section>
+    <!-- Footer -->
+    <footer
+        class="max-w-7xl mx-auto mt-20 px-6 pb-6 flex flex-col md:flex-row items-center justify-between text-xs text-gray-600">
+        <div class="flex space-x-4">
+            <img alt="Pertamina logo with red, blue, and green shapes" class="h-5 w-auto" height="20"
+                src="images/PERTAMINA1.png" width="40" />
+            <img alt="My Pertamina logo with blue and red colors" class="h-5 w-auto" height="20"
+                src="images/PertaminaAPK_1.png" width="40" />
+            <img alt="135 logo in red and white" class="h-5 w-auto" height="20" src="images/CC-removebg-preview 1.png"
+                width="40" />
+        </div>
+        <div class="flex flex-col items-center space-y-2 mt-6 md:mt-0">
+            <span class="font-bold text-[9px] uppercase">
+                Ikuti Media Sosial Kami
+            </span>
+            <div class="flex space-x-6 text-black text-lg">
+                <a aria-label="Facebook" class="hover:text-blue-600" href="#">
+                    <i class="fab fa-facebook-f">
+                    </i>
+                </a>
+                <a aria-label="Instagram" class="hover:text-pink-600" href="#">
+                    <i class="fab fa-instagram">
+                    </i>
+                </a>
+                <a aria-label="X Twitter" class="hover:text-sky-500" href="#">
+                    <i class="fab fa-x-twitter">
+                    </i>
+                </a>
+                <a aria-label="YouTube" class="hover:text-red-600" href="#">
+                    <i class="fab fa-youtube">
+                    </i>
+                </a>
+            </div>
+        </div>
+        <div class="text-right text-[9px] text-gray-400 hidden md:block">
+            <div>
+                FAQ
+            </div>
+            <div>
+                KONTAK
+            </div>
+        </div>
+    </footer>
+    <!-- Bottom Red Bar -->
+    <div class="bg-red-600 text-white text-center text-xs py-3 px-4">
+        <p>
+            Best view in Mozilla Firefox and Google Chrome.
+        </p>
+        <p>
+            Copyright © ELPIJI GAS | 2024 | All Right Reserved
+        </p>
+    </div>
+</body>
+
+</html>

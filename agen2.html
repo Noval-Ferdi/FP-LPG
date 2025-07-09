@@ -1,0 +1,201 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        Elpiji Stock Check
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        /* Custom dropdown arrow for Produk */
+        .dropdown-arrow {
+            border-top: 4px solid black;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            width: 0;
+            height: 0;
+            display: inline-block;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-black bg-white">
+    <!-- Navbar -->
+    <header class="flex justify-between items-center px-4 py-3 max-w-screen-xl mx-auto">
+        <div class="flex items-center space-x-6">
+            <a href="dashboard.html"><img alt="Elpiji Gas logo, flame shape with purple and yellow colors"
+                    class="w-17 h-22" height="50" src="images/ELPIJI_1.png" width="50" /></a>
+            <nav class="flex space-x-6 text-xs font-bold">
+                <a class="hover:underline" href="agen.html">
+                    AGEN
+                </a>
+                <div class="relative cursor-pointer" id="produk-menu">
+                    <button id="produk-toggle" class="flex items-center hover:underline focus:outline">
+                        PRODUK
+                        <span class="dropdown-arrow ml-1"></span>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div id="produk-dropdown"
+                        class="absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible transition duration-200 z-50">
+                        <a href="produk3.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Elpiji
+                            Gas 3Kg</a>
+                        <a href="produk12.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Elpiji
+                            12Kg</a>
+                    </div>
+                </div>
+                <a class="hover:underline" href="cek_stok.html">
+                    CEK STOK SEKARANG
+                </a>
+            </nav>
+        </div>
+        <div class="text-xs font-extrabold text-right leading-tight">
+            <a class="block hover:underline" href="#">
+                MASUK / DAFTAR
+            </a>
+            <a class="block hover:underline" href="#">
+                AGEN
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Script -->
+    <script>
+        const toggleBtn = document.getElementById('produk-toggle');
+        const dropdown = document.getElementById('produk-dropdown');
+
+        toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            dropdown.classList.toggle('invisible');
+            dropdown.classList.toggle('opacity-0');
+            dropdown.classList.toggle('opacity-100');
+            dropdown.classList.toggle('visible');
+        });
+
+        // Optional: hide dropdown if click outside
+        document.addEventListener('click', (e) => {
+            if (!document.getElementById('produk-menu').contains(e.target)) {
+                dropdown.classList.add('invisible', 'opacity-0');
+                dropdown.classList.remove('visible', 'opacity-100');
+            }
+        });
+    </script>
+
+    <!-- Info bar -->
+    <div class="bg-sky-300 text-sky-900 text-xs max-w-7xl mx-auto px-6 py-2">
+        <span class="inline-flex items-center space-x-1">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+            </svg>
+            <span>
+                Mau cek dimana?
+                <span class="font-semibold">
+                    isi terlebih dahulu, untuk alamat dan lokasimu
+                </span>
+            </span>
+        </span>
+    </div>
+    <!-- Map -->
+    <div class="max-w-screen-xl mx-auto px-4 mt-4">
+        <div class="border border-gray-300 rounded-md overflow-hidden">
+            <img src="images/Basemap image.png" alt="">
+        </div>
+        <div class="mt-4">
+            <input
+                class="text-center max-w-md mx-auto block border border-gray-400 rounded-md py-2 px-4 text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                placeholder="Masukkan Lokasi" type="text" />
+        </div>
+    </div>
+    <!-- Address info -->
+    <div class="max-w-7xl mx-auto px-6 mb-10">
+        <p class="font-bold text-sm mb-3">
+            PT. BEST
+        </p>
+        <p class="flex items-start space-x-3 mb-3 text-sm leading-5">
+            <i class="fas fa-map-marker-alt mt-1">
+            </i>
+            <span>
+                JALAN KEBONSARI JT III / 462 RT 029 RW 007, KELURAHAN GOWONGAN, KECAMATAN
+                JETIS, KOTA YOGYAKARTA
+            </span>
+        </p>
+        <p class="flex items-center space-x-3 text-sm leading-5">
+            <i class="fas fa-phone-alt">
+            </i>
+            <span>
+                08123456789
+            </span>
+        </p>
+    </div>
+    <!-- Check stock button -->
+    <div class="max-w-7xl mx-auto px-6 mb-16">
+        <a href="cek_stok2.html"><button
+                class="bg-blue-500 hover:bg-blue-600 text-white text-xs font-semibold py-2 px-6 rounded-md shadow-md block mx-auto"
+                type="button">
+                CEK STOK
+            </button></a>
+    </div>
+    <hr class="border-gray-400 max-w-7xl mx-auto" />
+    <!-- Footer -->
+    <footer
+        class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+        <div class="flex space-x-6 mb-6 md:mb-0">
+            <img alt="Pertamina logo with red, blue, and green shapes" class="h-7 object-contain" height="30"
+                src="https://storage.googleapis.com/a1aa/image/502a6d1d-5e9a-4870-0428-2ddf285fdecc.jpg" width="60" />
+            <img alt="My Pertamina logo with blue and white colors" class="h-7 object-contain" height="30"
+                src="https://storage.googleapis.com/a1aa/image/5c7f85f2-6793-4331-ff3c-f36daa43b798.jpg" width="60" />
+            <img alt="Pertamina Care 135 logo with red and white colors" class="h-7 object-contain" height="30"
+                src="https://storage.googleapis.com/a1aa/image/ce76e934-1eda-4f06-445b-94b6293931e5.jpg" width="60" />
+        </div>
+        <div class="flex flex-col items-center space-y-3 mb-6 md:mb-0">
+            <p class="font-extrabold uppercase text-[9px]">
+                Ikuti media sosial kami
+            </p>
+            <div class="flex space-x-6 text-black text-lg">
+                <a aria-label="Facebook" class="hover:text-gray-700" href="#">
+                    <i class="fab fa-facebook-f">
+                    </i>
+                </a>
+                <a aria-label="Instagram" class="hover:text-gray-700" href="#">
+                    <i class="fab fa-instagram">
+                    </i>
+                </a>
+                <a aria-label="X Twitter" class="hover:text-gray-700" href="#">
+                    <i class="fab fa-x-twitter">
+                    </i>
+                </a>
+                <a aria-label="YouTube" class="hover:text-gray-700" href="#">
+                    <i class="fab fa-youtube">
+                    </i>
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-col space-y-1 text-right text-[9px]">
+            <a class="hover:underline" href="#">
+                FAQ
+            </a>
+            <a class="hover:underline" href="#">
+                KONTAK
+            </a>
+        </div>
+    </footer>
+    <!-- Bottom red bar -->
+    <div class="bg-red-600 text-white text-center text-xs py-3 px-4">
+        <p>
+            Best view in Mozilla Firefox and Google Chrome.
+        </p>
+        <p>
+            Copyright © ELPIJI GAS | 2024 | All Right Reserved
+        </p>
+    </div>
+</body>
+
+</html>
