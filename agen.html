@@ -8,9 +8,13 @@
     </title>
     <script src="https://cdn.tailwindcss.com">
     </script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <style>
-        /* Custom dropdown arrow for Produk */
+        body {
+            font-family: 'Poppins';
+        }
+
         .dropdown-arrow {
             border-top: 4px solid black;
             border-left: 4px solid transparent;
@@ -24,12 +28,13 @@
     </style>
 </head>
 
-<body class="font-sans text-black bg-white">
+<body class="bg-white text-black">
+    <!-- Header -->
     <!-- Header -->
     <header class="flex justify-between items-center px-4 py-3 max-w-screen-xl mx-auto">
         <div class="flex items-center space-x-6">
-            <a href="dashboard.html"> <img alt="Elpiji Gas logo, flame shape with purple and yellow colors"
-                    class="w-17 h-22" height="50" src="images/ELPIJI_1.png" width="50"> </a>
+            <a href="dashboard.html"><img alt="Elpiji Gas logo, flame shape with purple and yellow colors"
+                    class="w-17 h-22" height="50" src="images/ELPIJI_1.png" width="50" /></a>
             <nav class="flex space-x-5 text-l font-bold">
                 <a class="hover:underline" href="agen.html">
                     AGEN
@@ -53,12 +58,9 @@
                 </a>
             </nav>
         </div>
-        <div class="text-xs font-extrabold text-right leading-tight">
+        <div class="text-l font-extrabold text-right leading-tight">
             <a class="block hover:underline" href="#">
-                MASUK / DAFTAR
-            </a>
-            <a class="block hover:underline" href="#">
-                AGEN
+                MASUK / DAFTAR AGEN
             </a>
         </div>
     </header>
@@ -283,47 +285,39 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer class="mt-16 bg-white max-w-screen-xl mx-auto px-4 pb-6">
-        <div
-            class="flex flex-col md:flex-row justify-between items-center text-center md:text-left text-[8px] font-extrabold text-black mb-4">
-            <div class="mb-3 md:mb-0">
+    <footer class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
+            <!-- Logo Bagian Kiri -->
+            <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                <img alt="Pertamina logo" class="h-5 w-auto" height="20" src="images/PERTAMINA1.png" width="40" />
+                <img alt="MyPertamina logo" class="h-5 w-auto" height="20" src="images/PertaminaAPK_1.png" width="40" />
+                <img alt="135 logo" class="h-5 w-auto" height="20" src="images/CC-removebg-preview 1.png" width="40" />
+            </div>
+
+            <!-- Sosial Media Tengah -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 text-center font-extrabold">
                 IKUTI MEDIA SOSIAL KAMI
-            </div>
-            <div class="flex space-x-4 mb-3 md:mb-0 justify-center">
-                <a aria-label="Facebook" class="hover:text-gray-700" href="#">
-                    <i class="fab fa-facebook-f text-lg">
-                    </i>
-                </a>
-                <a aria-label="Instagram" class="hover:text-gray-700" href="#">
-                    <i class="fab fa-instagram text-lg">
-                    </i>
-                </a>
-                <a aria-label="X" class="hover:text-gray-700" href="#">
-                    <i class="fab fa-x-twitter text-lg">
-                    </i>
-                </a>
-                <a aria-label="YouTube" class="hover:text-gray-700" href="#">
-                    <i class="fab fa-youtube text-lg">
-                    </i>
-                </a>
-            </div>
-            <div class="text-[6px] text-gray-400 space-y-0.5">
-                <div>
-                    FAQ
-                </div>
-                <div>
-                    KONTAK
+                <div class="flex justify-center items-center space-x-4 mt-3">
+                    <a aria-label="Facebook" class="text-gray-600 hover:text-black text-lg" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a aria-label="Instagram" class="text-gray-600 hover:text-black text-lg"
+                        href="https://www.instagram.com/ahanifraka_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a aria-label="Twitter" class="text-gray-600 hover:text-black text-lg" href="#">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a aria-label="YouTube" class="text-gray-600 hover:text-black text-lg" href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="flex justify-between items-center border-t border-gray-200 pt-4">
-            <div class="flex space-x-4">
-                <img alt="Pertamina logo with red, blue, and green shapes" class="h-5 w-auto" height="20"
-                    src="images/PERTAMINA1.png" width="40" />
-                <img alt="My Pertamina logo with blue and red colors" class="h-5 w-auto" height="20"
-                    src="images/PertaminaAPK_1.png" width="40" />
-                <img alt="135 logo in red and white" class="h-5 w-auto" height="20"
-                    src="images/CC-removebg-preview 1.png" width="40" />
+
+            <!-- FAQ & KONTAK Kanan -->
+            <div class="text-gray-400 text-xs text-right space-y-1 hidden md:block">
+                <div><a href="">FAQ</a></div>
+                <div><a href="">KONTAK</a></div>
             </div>
         </div>
     </footer>

@@ -8,9 +8,13 @@
     </title>
     <script src="https://cdn.tailwindcss.com">
     </script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <style>
-        /* Custom dropdown arrow for Produk */
+        body {
+            font-family: 'Poppins';
+        }
+
         .dropdown-arrow {
             border-top: 4px solid black;
             border-left: 4px solid transparent;
@@ -42,7 +46,8 @@
                     <!-- Dropdown Menu -->
                     <div id="produk-dropdown"
                         class="absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible transition duration-200 z-50">
-                        <a href="produk3.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Elpiji Gas 3Kg</a>
+                        <a href="produk3.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Elpiji
+                            Gas 3Kg</a>
                         <a href="produk12.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Elpiji
                             12Kg</a>
                     </div>
@@ -53,11 +58,8 @@
             </nav>
         </div>
         <div class="text-l font-extrabold text-right leading-tight">
-            <a class="block hover:underline" href="#">
-                MASUK / DAFTAR
-            </a>
-            <a class="block hover:underline" href="agen.html">
-                AGEN
+            <a class="block hover:underline" href="login.html">
+                MASUK / DAFTAR AGEN
             </a>
         </div>
     </header>
@@ -105,7 +107,8 @@
         </div>
         <div class="flex-1 space-y-6 w-full max-w-xl">
             <!-- Feature 1 -->
-            <div class="flex items-center rounded-3xl p-4 text-white space-x-4" style="background-color: FF0000;">
+            <div class="flex items-center rounded-3xl p-4 text-white space-x-4"
+                style="background-color: FF0000; padding-left: 30px;">
                 <div class="flex-shrink-0 bg-blue-600 rounded-full p-3 flex items-center justify-center"
                     style="width: 48px; height: 48px;">
                     <i class="fas fa-shield-alt text-white text-xl">
@@ -124,7 +127,8 @@
                 </div>
             </div>
             <!-- Feature 2 -->
-            <div class="flex items-center rounded-3xl p-4 text-white space-x-4" style="background-color: FF0000;">
+            <div class="flex items-center rounded-3xl p-4 text-white space-x-4"
+                style="background-color: FF0000; padding: 30px;">
                 <div class="flex-shrink-0 bg-blue-600 rounded-full p-3 flex items-center justify-center"
                     style="width: 48px; height: 48px;">
                     <i class="fas fa-phone-alt text-white text-xl">
@@ -141,7 +145,8 @@
                 </div>
             </div>
             <!-- Feature 3 -->
-            <div class="flex items-center rounded-3xl p-4 text-white space-x-4" style="background-color: FF0000;">
+            <div class="flex items-center rounded-3xl p-4 text-white space-x-4"
+                style="background-color: FF0000; padding: 30px;">
                 <div class="flex-shrink-0 bg-blue-600 rounded-full p-3 flex items-center justify-center"
                     style="width: 48px; height: 48px;">
                     <i class="fas fa-hand-holding-usd text-white text-xl">
@@ -165,16 +170,16 @@
     </section>
     <!-- Contact Section -->
     <section class="bg-[#fcd9db] py-10 max-w-8xl mx-auto px-5 sm:px-9 lg:px-9 flex flex-col lg:flex-row gap-8">
-        <div class="flex-1 max-w-l">
-            <h3 class="font-extrabold text-base mb-3">
+        <div class="flex-1 max-w-l" style="margin-top: 70px; font-size: 25px;">
+            <h1 class="font-extrabold text-center mb-3">
                 KONTAK KAMI
-            </h3>
-            <p class="text-xs leading-tight mb-3">
-                Silahkan tinggalkan pesan atau pertanyaan mengenai Website. Kami akan
-                menjawab segala pertanyaan anda secepatnya.
-            </p>
+            </h1>
+            <p class="text-xs leading-tight mb-3 text-center" style="font-size: 13px;">
+                Silahkan tinggalkan pesan atau pertanyaan mengenai Website.</p>
+            <p class="text-xs leading-tight mb-3 text-center" style="font-size: 13px;">subKami akan
+                menjawab segala pertanyaan anda secepatnya.</p>
         </div>
-        <form action="#" class="flex-1 max-w-lg space-y-3" method="POST">
+        <form action="#" class="flex-1 max-w-lg space-y-3" method="POST" style="margin-right: 200px;">
             <div class="flex space-x-3">
                 <input
                     class="flex-1 rounded-md border border-gray-300 px-3 py-2 text-xs focus:outline-none focus:ring-1 focus:ring-red-600"
@@ -198,42 +203,39 @@
         </form>
     </section>
     <!-- Footer -->
-    <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <footer class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
+            <!-- Logo Bagian Kiri -->
             <div class="flex items-center space-x-4 mb-4 md:mb-0">
                 <img alt="Pertamina logo" class="h-5 w-auto" height="20" src="images/PERTAMINA1.png" width="40" />
                 <img alt="MyPertamina logo" class="h-5 w-auto" height="20" src="images/PertaminaAPK_1.png" width="40" />
                 <img alt="135 logo" class="h-5 w-auto" height="20" src="images/CC-removebg-preview 1.png" width="40" />
             </div>
-            <div class="text-center font-extrabold mb-4 md:mb-0">
+
+            <!-- Sosial Media Tengah -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 text-center font-extrabold">
                 IKUTI MEDIA SOSIAL KAMI
+                <div class="flex justify-center items-center space-x-4 mt-3">
+                    <a aria-label="Facebook" class="text-gray-600 hover:text-black text-lg" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a aria-label="Instagram" class="text-gray-600 hover:text-black text-lg"
+                        href="https://www.instagram.com/ahanifraka_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a aria-label="Twitter" class="text-gray-600 hover:text-black text-lg" href="#">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a aria-label="YouTube" class="text-gray-600 hover:text-black text-lg" href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
             </div>
-            <div class="flex items-center space-x-4 mb-4 md:mb-0">
-                <a aria-label="Facebook" class="text-gray-600 hover:text-black text-lg" href="#">
-                    <i class="fab fa-facebook-f">
-                    </i>
-                </a>
-                <a aria-label="Instagram" class="text-gray-600 hover:text-black text-lg"
-                    href="https://www.instagram.com/ahanifraka_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                    <i class="fab fa-instagram">
-                    </i>
-                </a>
-                <a aria-label="Twitter" class="text-grey-600 hover:text-black text-lg" href="#">
-                    <i class="fab fa-twitter-x">
-                    </i>
-                </a>
-                <a aria-label="YouTube" class="text-gray-600 hover:text-black text-lg" href="#">
-                    <i class="fab fa-youtube">
-                    </i>
-                </a>
-            </div>
+
+            <!-- FAQ & KONTAK Kanan -->
             <div class="text-gray-400 text-xs text-right space-y-1 hidden md:block">
-                <div>
-                    FAQ
-                </div>
-                <div>
-                    KONTAK
-                </div>
+                <div><a href="">FAQ</a></div>
+                <div><a href="">KONTAK</a></div>
             </div>
         </div>
     </footer>

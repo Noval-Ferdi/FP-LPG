@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        Elpiji Gas Login
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: "Poppins";
+        }
+    </style>
+</head>
+
+<body class="bg-[#ededed] text-black">
+    <!-- Header -->
+    <header class="bg-white shadow-sm rounded-b-xl">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex-shrink-0">
+                <img alt="Elpiji Gas logo with flame icon and text ELPIJI" class="h-14 w-auto" height="60"
+                    src="images/ELPIJI_1.png" width="60" />
+            </div>
+            <div class="flex space-x-4">
+                <a href="dashboard.html"><button
+                        class="bg-[#c9e8ff] text-black rounded-md px-6 py-2 text-sm font-semibold" type="button">
+                        Kembali ke Beranda
+                    </button></a>
+                <a href="register.html"><button
+                        class="bg-[#009eff] text-white rounded-md px-6 py-2 text-sm font-semibold shadow-md hover:brightness-110 transition"
+                        type="button">
+                        Daftar
+                    </button></a>
+            </div>
+        </div>
+    </header>
+    <!-- Main content -->
+    <main class="flex-grow flex justify-center items-center px-6 py-10">
+        <section class="bg-white rounded-lg shadow-md max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 p-8 md:p-12">
+            <!-- Left image side -->
+            <div class="flex justify-center items-center">
+                <img alt="Illustration of a woman holding a tablet with blue screen, beside two gas cylinders, one large blue and one small green, with faint location pin, boxes, and scooter icons in background"
+                    class="max-w-full h-auto" height="350" src="images/Admin_1.png" width="400" />
+            </div>
+            <!-- Right form side -->
+            <div>
+                <div class="bg-[#ffe5e5] text-[#d40000] rounded-lg px-4 py-2 mb-6 text-xs font-semibold flex items-center gap-2 max-w-md"
+                    role="alert">
+                    <i class="fas fa-question-circle">
+                    </i>
+                    Butuh Bantuan? Hubungi
+                    <span class="font-bold">
+                        135
+                    </span>
+                </div>
+                <h2 class="text-2xl font-extrabold mb-2">
+                    Masuk Akun
+                </h2>
+                <p class="mb-6 text-sm max-w-md">
+                    Silakan masuk ke akun
+                    <span class="font-bold">
+                        Agen Elpiji Gas
+                    </span>
+                    anda untuk mengakses semua fitur.
+                </p>
+                <form class="max-w-md space-y-6">
+                    <div>
+                        <label class="block text-xs font-semibold mb-1" for="phone">
+                            Nomor Telepon
+                        </label>
+                        <input
+                            class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#009eff]"
+                            id="phone" name="phone" placeholder="Masukkan No Handphone" type="tel" />
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold mb-1" for="pin">
+                            PIN
+                            <span class="text-[#d40000]">
+                                *
+                            </span>
+                        </label>
+                        <input
+                            class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#009eff]"
+                            id="pin" name="pin" placeholder="Masukkan PIN" type="password" />
+                        <div class="text-xs text-[#d40000] text-right mt-1 cursor-pointer font-semibold">
+                            Lupa PIN?
+                        </div>
+                    </div>
+                    <button
+                        class="w-full bg-[#009eff] text-white font-semibold rounded-lg py-3 shadow-md hover:brightness-110 transition"
+                        type="submit">
+                        Masuk
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
+            <!-- Logo Bagian Kiri -->
+            <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                <img alt="Pertamina logo" class="h-5 w-auto" height="20" src="images/PERTAMINA1.png" width="40" />
+                <img alt="MyPertamina logo" class="h-5 w-auto" height="20" src="images/PertaminaAPK_1.png" width="40" />
+                <img alt="135 logo" class="h-5 w-auto" height="20" src="images/CC-removebg-preview 1.png" width="40" />
+            </div>
+
+            <!-- Sosial Media Tengah -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 text-center font-extrabold">
+                IKUTI MEDIA SOSIAL KAMI
+                <div class="flex justify-center items-center space-x-4 mt-3">
+                    <a aria-label="Facebook" class="text-gray-600 hover:text-black text-lg" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a aria-label="Instagram" class="text-gray-600 hover:text-black text-lg"
+                        href="https://www.instagram.com/ahanifraka_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a aria-label="Twitter" class="text-gray-600 hover:text-black text-lg" href="#">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a aria-label="YouTube" class="text-gray-600 hover:text-black text-lg" href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- FAQ & KONTAK Kanan -->
+            <div class="text-gray-400 text-xs text-right space-y-1 hidden md:block">
+                <div><a href="">FAQ</a></div>
+                <div><a href="">KONTAK</a></div>
+            </div>
+        </div>
+    </footer>
+    <div class="bg-[#009eff] text-white text-center text-sm py-5">
+        <p>
+            Best view in Mozilla Firefox and Google Chrome.
+        </p>
+        <p>
+            Copyright © ELPIJI GAS | 2024 | All Right Reserved
+        </p>
+    </div>
+</body>
+
+</html>
