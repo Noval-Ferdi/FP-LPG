@@ -91,7 +91,7 @@
             <img src="images/gas12.png" alt="">
         </div>
     </section>
-        <!-- ini dari backend -->
+    
     <!-- Description Text -->
     <section class="max-w-4xl mx-auto mt-12 px-6 text-gray-900 text-base md:text-lg leading-relaxed space-y-6">
         <p>
