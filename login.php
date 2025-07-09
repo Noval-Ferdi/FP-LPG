@@ -67,7 +67,7 @@
                     </span>
                     anda untuk mengakses semua fitur.
                 </p>
-                <form class="max-w-md space-y-6">
+                <form class="max-w-md space-y-6" action ="dashboard.php">
                     <div>
                         <label class="block text-xs font-semibold mb-1" for="phone">
                             Nomor Telepon

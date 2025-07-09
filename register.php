@@ -68,7 +68,7 @@
                     login. Apabila Anda belum memiliki akun
                     MyPertamina, silakan masukkan data diri untuk mendaftar.
                 </p>
-                <form class="max-w-md space-y-6">
+                <form class="max-w-md space-y-6" action = "login.php">
                     <div>
                         <label class="block text-xs font-semibold mb-1" for="phone">
                             Nomor Telepon
