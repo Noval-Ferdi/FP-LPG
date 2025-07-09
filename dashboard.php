@@ -86,7 +86,7 @@
         });
     </script>
     <!-- Hero Banner -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
         <div class="relative rounded-md overflow-hidden">
             <img src="images/PNG.png" alt="">
         </div>
@@ -165,8 +165,8 @@
     </section>
     <!-- Instagram Section -->
     <section class="bg-[#d7e9fb] mt-20 py-8 flex justify-center items-center">
-        <i class="fab fa-instagram text-white text-3xl">
-        </i>
+        <a href="#"><i class="fab fa-instagram text-white text-6xl">
+        </i></a>
     </section>
     <!-- Contact Section -->
     <section class="bg-[#fcd9db] py-16 max-w-8xl mx-auto px-5 sm:px-7 lg:px-7 flex flex-col lg:flex-row gap-5">
@@ -198,7 +198,7 @@
             <textarea
                 class="w-full rounded-md border border-gray-300 px-3 py-2 text-xs resize-none focus:outline-none focus:ring-1 focus:ring-red-600"
                 name="message" placeholder="Tulis Pesan..." required="" rows="4"></textarea>
-            <button class="bg-red-600 text-white text-xs px-4 py-1 rounded-md float-right" type="submit">
+            <button class="bg-red-600 text-white text-s px-4 py-1 rounded-md float-right" type="submit">
                 Kirim
             </button>
         </form>

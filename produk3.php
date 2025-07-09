@@ -108,7 +108,7 @@
     <!-- Green Cylinder Image -->
     <section class="max-w-7xl mx-auto mt-32 flex justify-center px-6">
         <a href="produk12.php"><img alt="Green Elpiji Gas cylinder with reflection on bright green background" class="w-40 md:w-48"
-            height="160" src="images/gas12.png" width="160" /></a>
+            height="160" src="images/3.png" width="160" /></a>
     </section>
     <!-- Footer -->
     <footer class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">

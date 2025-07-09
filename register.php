@@ -31,9 +31,9 @@
                         Kembali ke Beranda
                     </button></a>
                 <a href="login.php"><button
-                        class="bg-red-600 text-white rounded-md px-6 py-2 text-sm font-semibold shadow-md hover:brightness-110 transition"
+                        class="bg-[#009eff] text-white rounded-md px-6 py-2 text-sm font-semibold shadow-md hover:brightness-110 transition"
                         type="button">
-                        Mulai
+                        Masuk
                     </button></a>
             </div>
         </div>
@@ -48,7 +48,7 @@
             </div>
             <!-- Right form side -->
             <div>
-                <div class="bg-[#ffe5e5] text-[#d40000] rounded-lg px-4 py-2 mb-6 text-xs font-semibold flex items-center gap-2 max-w-md"
+                <div class="bg-[#ffe5e5] text-[#d40000] rounded-lg px-4 py-2 mb-6 text-xs font-semibold text-center items-center gap-2 max-w-md"
                     role="alert">
                     <i class="fas fa-question-circle">
                     </i>
@@ -100,9 +100,9 @@
                         </div>
                     </div>
                     <button
-                        class="w-full bg-[#009eff] text-white font-semibold rounded-lg py-3 shadow-md hover:brightness-110 transition"
+                        class="w-full bg-red-600 text-white font-semibold rounded-lg py-3 shadow-md hover:brightness-110 transition"
                         type="submit">
-                        Masuk
+                        Daftar
                     </button>
                 </form>
             </div>
