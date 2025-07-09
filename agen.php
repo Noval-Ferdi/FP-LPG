@@ -33,10 +33,10 @@
     <!-- Header -->
     <header class="flex justify-between items-center px-4 py-3 max-w-screen-xl mx-auto">
         <div class="flex items-center space-x-6">
-            <a href="dashboard.html"><img alt="Elpiji Gas logo, flame shape with purple and yellow colors"
+            <a href="dashboard.php"><img alt="Elpiji Gas logo, flame shape with purple and yellow colors"
                     class="w-17 h-22" height="50" src="images/ELPIJI_1.png" width="50" /></a>
             <nav class="flex space-x-5 text-l font-bold">
-                <a class="hover:underline" href="agen.html">
+                <a class="hover:underline" href="agen.php">
                     AGEN
                 </a>
                 <div class="relative cursor-pointer" id="produk-menu">
@@ -47,13 +47,13 @@
                     <!-- Dropdown Menu -->
                     <div id="produk-dropdown"
                         class="absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible transition duration-200 z-50">
-                        <a href="produk3.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Elpiji
+                        <a href="produk3.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Elpiji
                             Gas 3Kg</a>
-                        <a href="produk12.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Elpiji
+                        <a href="produk12.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Elpiji
                             12Kg</a>
                     </div>
                 </div>
-                <a class="hover:underline" href="cek_stok.html">
+                <a class="hover:underline" href="cek_stok.php">
                     CEK STOK SEKARANG
                 </a>
             </nav>

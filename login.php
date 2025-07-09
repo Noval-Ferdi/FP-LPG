@@ -26,11 +26,11 @@
                     src="images/ELPIJI_1.png" width="60" />
             </div>
             <div class="flex space-x-4">
-                <a href="dashboard.html"><button
+                <a href="dashboard.php"><button
                         class="bg-[#c9e8ff] text-black rounded-md px-6 py-2 text-sm font-semibold" type="button">
                         Kembali ke Beranda
                     </button></a>
-                <a href="register.html"><button
+                <a href="register.php"><button
                         class="bg-[#009eff] text-white rounded-md px-6 py-2 text-sm font-semibold shadow-md hover:brightness-110 transition"
                         type="button">
                         Daftar
