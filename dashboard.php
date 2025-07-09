@@ -169,15 +169,16 @@
         </i>
     </section>
     <!-- Contact Section -->
-    <section class="bg-[#fcd9db] py-10 max-w-8xl mx-auto px-5 sm:px-9 lg:px-9 flex flex-col lg:flex-row gap-8">
+    <section class="bg-[#fcd9db] py-16 max-w-8xl mx-auto px-5 sm:px-7 lg:px-7 flex flex-col lg:flex-row gap-5">
         <div class="flex-1 max-w-l" style="margin-top: 70px; font-size: 25px;">
-            <h1 class="font-extrabold text-center mb-3">
+            <h1 class="font-extrabold text-right mb-3">
                 KONTAK KAMI
             </h1>
-            <p class="text-xs leading-tight mb-3 text-center" style="font-size: 13px;">
+            <p class="text-xs leading-tight mb-3 text-right" style="font-size: 14px;">
                 Silahkan tinggalkan pesan atau pertanyaan mengenai Website.</p>
-            <p class="text-xs leading-tight mb-3 text-center" style="font-size: 13px;">subKami akan
-                menjawab segala pertanyaan anda secepatnya.</p>
+            <p class="text-xs leading-tight mb-3 text-right" style="font-size: 14px;">
+                 Kami akan menjawab segala pertanyaan anda secepatnya.</p>
+            
         </div>
         <form action="#" class="flex-1 max-w-lg space-y-3" method="POST" style="margin-right: 200px;">
             <div class="flex space-x-3">
@@ -197,7 +198,7 @@
             <textarea
                 class="w-full rounded-md border border-gray-300 px-3 py-2 text-xs resize-none focus:outline-none focus:ring-1 focus:ring-red-600"
                 name="message" placeholder="Tulis Pesan..." required="" rows="4"></textarea>
-            <button class="bg-red-600 text-white text-xs px-4 py-1 rounded-sm float-right" type="submit">
+            <button class="bg-red-600 text-white text-xs px-4 py-1 rounded-md float-right" type="submit">
                 Kirim
             </button>
         </form>
@@ -207,9 +208,9 @@
         <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
             <!-- Logo Bagian Kiri -->
             <div class="flex items-center space-x-4 mb-4 md:mb-0">
-                <img alt="Pertamina logo" class="h-5 w-auto" height="20" src="images/PERTAMINA1.png" width="40" />
-                <img alt="MyPertamina logo" class="h-5 w-auto" height="20" src="images/PertaminaAPK_1.png" width="40" />
-                <img alt="135 logo" class="h-5 w-auto" height="20" src="images/CC-removebg-preview 1.png" width="40" />
+                <img alt="Pertamina logo" class="h-7 w-auto" height="40" src="images/PERTAMINA1.png" width="40" />
+                <img alt="MyPertamina logo" class="h-7 w-auto" height="40" src="images/PertaminaAPK_1.png" width="40" />
+                <img alt="135 logo" class="h-7 w-auto" height="40" src="images/CC-removebg-preview 1.png" width="40" />
             </div>
 
             <!-- Sosial Media Tengah -->

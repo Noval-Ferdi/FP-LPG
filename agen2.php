@@ -150,9 +150,9 @@
         <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
             <!-- Logo Bagian Kiri -->
             <div class="flex items-center space-x-4 mb-4 md:mb-0">
-                <img alt="Pertamina logo" class="h-5 w-auto" height="20" src="images/PERTAMINA1.png" width="40" />
-                <img alt="MyPertamina logo" class="h-5 w-auto" height="20" src="images/PertaminaAPK_1.png" width="40" />
-                <img alt="135 logo" class="h-5 w-auto" height="20" src="images/CC-removebg-preview 1.png" width="40" />
+                <img alt="Pertamina logo" class="h-7 w-auto" height="40" src="images/PERTAMINA1.png" width="40" />
+                <img alt="MyPertamina logo" class="h-7 w-auto" height="40" src="images/PertaminaAPK_1.png" width="40" />
+                <img alt="135 logo" class="h-7 w-auto" height="40" src="images/CC-removebg-preview 1.png" width="40" />
             </div>
 
             <!-- Sosial Media Tengah -->
