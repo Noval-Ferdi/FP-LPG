@@ -58,7 +58,7 @@
                 </a>
             </nav>
         </div>
-        <div class="text-xs font-extrabold text-right leading-tight">
+        <div class="text-l font-extrabold text-right leading-tight">
             <a class="block hover:underline" href="#">
                 MASUK / DAFTAR AGEN
             </a>
