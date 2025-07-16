@@ -1,0 +1,158 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        ElpijiDash Service
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow rounded-b-2xl px-6 py-4 flex items-center gap-10">
+        <img alt="Elpiji flame logo with text Elpiji" class="w-10 h-10 object-contain" height="40"
+            src="../images/ELPIJI_1.png" width="40" />
+        <span class="font-semibold text-black text-lg select-none">
+            ElpijiDash.
+        </span>
+        <nav class="font-semibold text-black text-lg select-none">
+            Service
+        </nav>
+        <a href="../dashboard.php" class="ml-auto">
+            <button class="bg-[#c9e8ff] text-black rounded-md px-6 py-2 text-sm font-semibold" type="button">
+                Kembali Ke Beranda
+            </button>
+        </a>
+    </header>
+    <div class="flex flex-1 overflow-hidden">
+        <!-- Sidebar -->
+        <aside class="bg-white w-64 flex flex-col justify-between py-10 px-6 rounded-r-3xl select-none">
+            <nav class="flex flex-col gap-6 text-gray-400 text-base font-normal">
+                <a class="flex items-center gap-3 hover:text-indigo-700 transition-colors duration-200"
+                    href="dashboard_admin.php">
+                    <i class="fas fa-home text-gray-400 text-lg">
+                    </i>
+                    Dashboard
+                </a>
+                <a class="flex items-center gap-3 hover:text-indigo-700 transition-colors duration-200"
+                    href="transactions.php">
+                    <i class="fas fa-mobile-alt text-gray-400">
+                    </i>
+                    Transaksi
+                </a>
+                <a class="flex items-center gap-3 hover:text-indigo-700 transition-colors duration-200"
+                    href="account.php">
+                    <i class="fas fa-user text-gray-400">
+                    </i>
+                    Akun
+                </a>
+                <a aria-current="page" class="flex items-center gap-3 text-indigo-700 font-semibold" href="service.php">
+                    <i class="fas fa-sliders-h text-indigo-700">
+                    </i>
+                    Service
+                </a>
+                <a class="flex items-center gap-3 hover:text-gray-600 transition-colors duration-200"
+                    href="setting.php">
+                    <i class="fas fa-cog text-gray-400">
+                    </i>
+                    Setting
+                </a>
+            </nav>
+            <div class="flex flex-col items-center gap-4 mt-10">
+                <img alt="Pertamina logo with red, blue, and yellow colors" class="w-10 h-10 object-contain" height="40"
+                    src="../images/PERTAMINA1.png" width="40" />
+                <img alt="My Pertamina logo in blue and white" class="w-10 h-10 object-contain" height="40"
+                    src="../images/PertaminaAPK_1.png" width="40" />
+                <img alt="Pertamina call center 135 logo in red and white" class="w-10 h-10 object-contain" height="40"
+                    src="../images/CC-removebg-preview 1.png" width="40" />
+            </div>
+            <div class="flex gap-4 justify-center mt-10 text-black text-lg">
+                <a aria-label="Facebook" class="hover:text-indigo-700 transition-colors duration-200" href="#">
+                    <i class="fab fa-facebook-f">
+                    </i>
+                </a>
+                <a aria-label="Instagram" class="hover:text-indigo-700 transition-colors duration-200" href="#">
+                    <i class="fab fa-instagram">
+                    </i>
+                </a>
+                <a aria-label="X" class="hover:text-indigo-700 transition-colors duration-200" href="#">
+                    <i class="fab fa-x-twitter">
+                    </i>
+                </a>
+                <a aria-label="YouTube" class="hover:text-indigo-700 transition-colors duration-200" href="#">
+                    <i class="fab fa-youtube">
+                    </i>
+                </a>
+            </div>
+        </aside>
+        <!-- Main content -->
+        <main class="flex-1 p-8 overflow-auto max-w-4xl mx-auto">
+            <h1 class="text-black font-semibold text-xl mb-6 select-none">
+                Service Requests
+            </h1>
+            <section class="bg-white rounded-xl p-6 shadow-sm">
+                <form class="flex flex-col gap-6 max-w-lg">
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2" for="serviceType">
+                            Service Type
+                        </label>
+                        <select
+                            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600"
+                            id="serviceType" name="serviceType" required="">
+                            <option value="" disabled="" selected="">
+                                Select a service
+                            </option>
+                            <option value="installation">
+                                Installation
+                            </option>
+                            <option value="maintenance">
+                                Maintenance
+                            </option>
+                            <option value="repair">
+                                Repair
+                            </option>
+                            <option value="consultation">
+                                Consultation
+                            </option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2" for="description">
+                            Description
+                        </label>
+                        <textarea
+                            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600 resize-none"
+                            id="description" name="description" placeholder="Describe your service request" rows="4"
+                            required="">
+</textarea>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2" for="preferredDate">
+                            Preferred Date
+                        </label>
+                        <input
+                            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600"
+                            id="preferredDate" name="preferredDate" type="date" required="" />
+                    </div>
+                    <button
+                        class="bg-indigo-700 text-white font-semibold py-2 rounded-md hover:bg-indigo-800 transition-colors duration-200"
+                        type="submit">
+                        Submit Request
+                    </button>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
